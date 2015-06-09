@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.gygaweb.skeedo.ReuniaoAtividade" >
+
+    <Button
+        android:id="@+id/buttonSair"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/sairbuttontxt" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSair"
+        android:layout_alignBottom="@+id/buttonSair"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btngravartxt" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEdita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSair"
+        android:layout_alignLeft="@+id/buttonSair"
+        android:layout_alignStart="@+id/buttonSair"
+        android:layout_marginBottom="26dp" >
+
+        <RadioButton
+            android:id="@+id/radioNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/naocheckboxtxt" />
+
+        <RadioButton
+            android:id="@+id/radioSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/simcheckboxtxt" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDespertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupEdita"
+        android:layout_alignLeft="@+id/radioGroupEdita"
+        android:layout_alignStart="@+id/radioGroupEdita"
+        android:text="@string/despertartxt" />
+
+    <EditText
+        android:id="@+id/editTextHrReuniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewDespertar"
+        android:layout_alignLeft="@+id/textViewDespertar"
+        android:layout_alignStart="@+id/textViewDespertar"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextHrReuniao"
+        android:layout_alignLeft="@+id/editTextHrReuniao"
+        android:layout_alignStart="@+id/editTextHrReuniao"
+        android:text="@string/horarioreuniaotxt" />
+
+    <EditText
+        android:id="@+id/editTextDtReuniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewHorario"
+        android:layout_alignLeft="@+id/textViewHorario"
+        android:layout_alignStart="@+id/textViewHorario"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextDtReuniao"
+        android:layout_alignLeft="@+id/editTextDtReuniao"
+        android:layout_alignStart="@+id/editTextDtReuniao"
+        android:text="@string/dtreuniaotxt" />
+
+    <EditText
+        android:id="@+id/editTextEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewData"
+        android:layout_alignLeft="@+id/textViewData"
+        android:layout_alignStart="@+id/textViewData"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textViewEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextEndereco"
+        android:layout_alignLeft="@+id/editTextEndereco"
+        android:layout_alignStart="@+id/editTextEndereco"
+        android:text="@string/reuniaoenderecotxt" />
+
+</RelativeLayout>

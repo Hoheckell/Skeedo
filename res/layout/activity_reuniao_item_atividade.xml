@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.gygaweb.skeedo.ReuniaoItemAtividade" >
+
+    <Button
+        android:id="@+id/buttonEditaAlterar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonEditaSair"
+        android:layout_alignBottom="@+id/buttonEditaSair"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/alterarbutton" />
+
+    <EditText
+        android:id="@+id/editTextEditaEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEditaEndereco"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textViewEditaEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEditaEndereco"
+        android:layout_alignStart="@+id/editTextEditaEndereco"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/txteditaendereco" />
+
+    <EditText
+        android:id="@+id/editTextEditaDTReuniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEditaEndereco"
+        android:layout_alignStart="@+id/editTextEditaEndereco"
+        android:layout_below="@+id/textViewEditaDesc"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewEditaDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEditaDTReuniao"
+        android:layout_alignStart="@+id/editTextEditaDTReuniao"
+        android:layout_below="@+id/editTextEditaEndereco"
+        android:text="@string/txteditadtreuniao" />
+
+    <EditText
+        android:id="@+id/editTexteditaHrReuniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEditaDTReuniao"
+        android:layout_alignStart="@+id/editTextEditaDTReuniao"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTexteditaHrReuniao"
+        android:layout_alignStart="@+id/editTexteditaHrReuniao"
+        android:layout_below="@+id/editTextEditaDTReuniao"
+        android:text="@string/txteditaHrReuniao" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEdita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTexteditaHrReuniao"
+        android:layout_alignStart="@+id/editTexteditaHrReuniao"
+        android:layout_below="@+id/textView3" >
+
+        <RadioButton
+            android:id="@+id/radioEditaS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/simcheckboxtxt" />
+
+        <RadioButton
+            android:id="@+id/radioEditaN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/naocheckboxtxt" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroupEdita"
+        android:layout_alignStart="@+id/radioGroupEdita"
+        android:layout_below="@+id/editTexteditaHrReuniao"
+        android:text="@string/despertartxt" />
+
+    <Button
+        android:id="@+id/buttonEditaSair"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroupEdita"
+        android:layout_alignStart="@+id/radioGroupEdita"
+        android:layout_below="@+id/radioGroupEdita"
+        android:layout_marginTop="40dp"
+        android:text="@string/sairbuttontxt" />
+
+</RelativeLayout>

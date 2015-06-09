@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemAlterarTarefa" android:title="@string/alterarTarefaContextoMenu"></item>
+    <item android:id="@+id/itemRemoverTarefa" android:title="@string/removerTarefaContextoMenu"></item>
+    <item android:id="@+id/itemConcluirTarefa" android:title="@string/concluirTarefaContextoMenu"></item>
+    <item android:id="@+id/itemSair" android:title="@string/listviewtarefassair"></item>
+    <item android:id="@id/itemMostraConcluidas" android:title="@string/varTarefasConcluidas"></item>
+    <item android:id="@+id/itemEnviarporEmail" android:title="@string/enviatarefaemail"></item>
+    
+
+</menu>

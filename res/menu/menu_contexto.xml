@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.unifor.programacao.paciente.atividade.ListaPacienteAtividade" >
+
+    <item android:id="@+id/itemAlterarReuniao" android:title="@string/alterar_reuniao">
+    </item><item android:id="@+id/itemInserirDescricao" android:title="@string/inserir_descricao"></item><item android:id="@+id/itemLerDesc" android:title="@string/contextLerDesc"></item><item
+        android:id="@+id/itemRemoverReuniao"
+        android:title="@string/contextitemremovereuniao">
+    </item>
+    
+    
+    <item android:id="@+id/itemSair" android:title="@string/listviewtarefassair"></item>
+    <item android:id="@+id/itemEnviarpEmail" android:title="@string/enviareuniaoemail"></item>
+    
+    
+    
+</menu>
